@@ -15,6 +15,7 @@ namespace MongoDockConnector.Lib
         /// </summary>
         /// <param name="connectionString">MongoDB connection string.</param>
         /// <exception cref="ArgumentNullException">Thrown when connectionString is null.</exception>
+        /// </summary>
         public MongoDBConnector(string connectionString)
         {
             _connectionString = connectionString ?? throw new ArgumentNullException(nameof(connectionString));
