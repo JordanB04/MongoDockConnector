@@ -24,6 +24,7 @@ namespace MongoDockConnector.Lib
         /// <summary>
         /// Pings the MongoDB server by running { ping: 1 } against the admin DB.
         /// Returns true on success, false on any exception. Accepts no parameters.
+        /// <returns>True if the ping command succeeds, false otherwise.</returns>
         /// </summary>
         public async Task<bool> PingAsync()
         {
