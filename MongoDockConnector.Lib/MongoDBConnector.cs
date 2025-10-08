@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MongoDockConnector.Lib
 {
-    public class MongoDBConnector
+    public class MongoDBConnector : IDBConnector
     {
         private readonly string _connectionString;
         private readonly MongoClient _client;
